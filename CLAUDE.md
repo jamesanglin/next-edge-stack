@@ -39,6 +39,10 @@ This is a TypeScript monorepo using pnpm workspaces:
   - Deploy with `pnpm --filter @rejection-wrapped/worker deploy`
   - Add bindings (KV, Durable Objects) to the `Env` interface
 
+- **packages/ui**: Shared UI components (shadcn/ui)
+  - Import as `@workspace/ui/components/ui/button`
+  - Contains shadcn components, hooks, and utilities
+
 - **e2e/**: Playwright tests against the web app
 
 ## Testing
@@ -53,4 +57,19 @@ E2E tests run against `localhost:3000` (auto-started). Run a specific test:
 
 ```bash
 pnpm test:e2e e2e/home.spec.ts
+```
+
+## Adding shadcn Components
+
+Run from the web app directory:
+
+```bash
+cd apps/web
+npx shadcn@latest add <component> --yes
+```
+
+Components install to `packages/ui/src/components/ui/`. Import as:
+
+```tsx
+import { Button } from "@workspace/ui/components/ui/button";
 ```
