@@ -1,5 +1,5 @@
 {
-  "name": "@rejection-wrapped/worker",
+  "name": "@workspace/worker",
   "version": "0.1.0",
   "private": true,
   "type": "module",

@@ -1,11 +1,11 @@
 {
-  "name": "rejection-wrapped",
+  "name": "next-edge-stack",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "pnpm -r --parallel dev",
-    "dev:web": "pnpm --filter @rejection-wrapped/web dev",
-    "dev:worker": "pnpm --filter @rejection-wrapped/worker dev",
+    "dev:web": "pnpm --filter @workspace/web dev",
+    "dev:worker": "pnpm --filter @workspace/worker dev",
     "build": "pnpm -r build",
     "test": "vitest",
     "test:e2e": "playwright test",

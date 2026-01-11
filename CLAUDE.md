@@ -36,7 +36,7 @@ This is a TypeScript monorepo using pnpm workspaces:
 
 - **apps/worker**: Cloudflare Workers serverless API
   - Entry point: `src/index.ts` exports fetch handler
-  - Deploy with `pnpm --filter @rejection-wrapped/worker deploy`
+  - Deploy with `pnpm --filter @workspace/worker deploy`
   - Add bindings (KV, Durable Objects) to the `Env` interface
 
 - **packages/ui**: Shared UI components (shadcn/ui)
