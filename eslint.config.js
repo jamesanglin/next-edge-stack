@@ -9,6 +9,7 @@ export default [
       "**/node_modules/**",
       "**/dist/**",
       "**/.next/**",
+      "**/.wrangler/**",
       "**/coverage/**",
       "**/playwright-report/**",
     ],
