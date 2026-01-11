@@ -32,7 +32,7 @@ This is a TypeScript monorepo using pnpm workspaces:
 - **apps/web**: Next.js 16 frontend (React 19, App Router, TailwindCSS v4)
   - Source in `src/app/` using App Router conventions
   - Path alias: `@/*` maps to `./src/*`
-  - Unit tests alongside source in `__tests__/`
+  - Unit tests co-located with source files (e.g., `Component.tsx` → `Component.test.tsx`)
 
 - **apps/worker**: Cloudflare Workers serverless API
   - Entry point: `src/index.ts` exports fetch handler
@@ -46,7 +46,7 @@ This is a TypeScript monorepo using pnpm workspaces:
 Unit tests use Vitest with React Testing Library for components. Run a single test file:
 
 ```bash
-pnpm test apps/web/src/__tests__/example.test.tsx
+pnpm test apps/web/src/app/page.test.tsx
 ```
 
 E2E tests run against `localhost:3000` (auto-started). Run a specific test:
