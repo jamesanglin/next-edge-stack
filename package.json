@@ -9,6 +9,7 @@
     "build": "pnpm -r build",
     "test": "vitest",
     "test:e2e": "playwright test",
+    "typecheck": "pnpm -r typecheck",
     "lint": "eslint .",
     "format": "prettier --write .",
     "prepare": "husky"

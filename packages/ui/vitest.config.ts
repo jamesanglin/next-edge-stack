@@ -7,12 +7,12 @@ export default defineConfig({
   test: {
     environment: "jsdom",
     include: ["**/*.{test,spec}.{ts,tsx}"],
-    exclude: ["node_modules", ".next"],
+    exclude: ["node_modules", "dist"],
     setupFiles: ["./vitest.setup.ts"],
   },
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      "@workspace/ui": path.resolve(__dirname, "./src"),
     },
   },
 });
